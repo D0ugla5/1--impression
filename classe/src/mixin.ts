@@ -1,4 +1,4 @@
-//import { applyMixins } from './mixin/applyMixin';
+import { applyMixins } from './new/applyMixin';
 
 class Automovel{
 
@@ -33,7 +33,7 @@ class Carro{
 
 interface Carro extends Automovel, Especificacao{ }
 
-//applyMixins(Carro, [Automovel, Especificacao])
+applyMixins(Carro, [Automovel, Especificacao])
 
 const gol = new Carro("Gol 1.6");
 

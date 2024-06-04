@@ -1,5 +1,6 @@
 "use strict";
-//import { applyMixins } from './mixin/applyMixin';
+Object.defineProperty(exports, "__esModule", { value: true });
+var applyMixin_1 = require("./new/applyMixin");
 var Automovel = /** @class */ (function () {
     function Automovel() {
     }
@@ -23,7 +24,7 @@ var Carro = /** @class */ (function () {
     }
     return Carro;
 }());
-//applyMixins(Carro, [Automovel, Especificacao])
+applyMixin_1.applyMixins(Carro, [Automovel, Especificacao]);
 var gol = new Carro("Gol 1.6");
 gol.ligar();
 gol.descricao = "Modelo completo, automatico";
