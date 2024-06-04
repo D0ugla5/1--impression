@@ -32,10 +32,10 @@ function validaNome(tamanho: number){
 
 class Jogo {
 
-  @validaNome(5)
+ // @validaNome(5)
   nome: string;
 
-  @validaNome(15)
+ // @validaNome(15)
   titulo: string;
 
   constructor(nome: string, titulo: string){
